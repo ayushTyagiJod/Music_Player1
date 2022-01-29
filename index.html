@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+   />
+  
+    <link rel="stylesheet" href="style.css">
+    <link id="theme-style" rel="stylesheet" href="">
+</head>
+<body>
+    <div class="main_div">
+        <!-- theme chnge -->
+
+        <div class="color">
+         
+    <div id="theme-option-wrapper">
+        <div  data-mode="light"  id="light-mode" class="theme-dot"></div>
+        <div data-mode="blue"  id="blue-mode" class="theme-dot"></div>
+        <div  data-mode="green" id="green-mode" class="theme-dot"></div>
+        <div  data-mode="purple" id="purple-mode" class="theme-dot"></div>
+    </div></div>
+    <p id="hey">  *Select your theme </p>
+    <!-- upto here -->
+        <div class="music_container">
+            <h2 id="title">Life</h2>
+            <h3 id="artist">Akhil</h3>
+            <div class="img_container">
+                <img src="./img/Life.png" alt="">
+            </div>
+            <audio src="./music/Life.mp3"></audio>
+            <!-- progress bar -->
+            <div class="progressbar_container" id="progress_container">
+                <div class="progress_duration_meter">
+                    <div id="current_time">0:00</div>
+                    <div id="duration">0:00</div>
+                </div>
+                <div class="progress_div" id="progress_div">
+                    <div class="progress" id="progress">
+
+                    </div>
+                </div>
+            </div>
+            <!-- controls -->
+            <div class="music_controls">
+               
+                    <i  id="prev" title="previous"  class="fas fa-backward"></i>
+
+                    <i  id="play" title="play" class="fas fa-play main_button"></i>
+           
+                    <i  id="next" title="next" class="fas fa-forward"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
